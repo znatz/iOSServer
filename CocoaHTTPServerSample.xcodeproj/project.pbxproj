@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A032E8601C6544340096A864 /* web in Resources */ = {isa = PBXBuildFile; fileRef = A032E85F1C6544340096A864 /* web */; };
+		A032E8621C6546420096A864 /* libCocoaHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A032E8611C6546420096A864 /* libCocoaHTTPServer.a */; };
+		A032E8651C6548EA0096A864 /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A032E8641C6548EA0096A864 /* MyHTTPConnection.m */; };
 		A0621A9A1C64E5BB004A7755 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0621A991C64E5BB004A7755 /* main.m */; };
 		A0621A9D1C64E5BB004A7755 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0621A9C1C64E5BB004A7755 /* AppDelegate.m */; };
 		A0621AA01C64E5BB004A7755 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0621A9F1C64E5BB004A7755 /* ViewController.m */; };
@@ -14,9 +17,16 @@
 		A0621AA61C64E5BB004A7755 /* CocoaHTTPServerSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0621AA41C64E5BB004A7755 /* CocoaHTTPServerSample.xcdatamodeld */; };
 		A0621AA81C64E5BB004A7755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0621AA71C64E5BB004A7755 /* Assets.xcassets */; };
 		A0621AAB1C64E5BB004A7755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0621AA91C64E5BB004A7755 /* LaunchScreen.storyboard */; };
+		AAF7532C6D6DEC4472C10C10 /* libPods-CocoaHTTPServerSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAF0E072B9A6E0AB74159DB /* libPods-CocoaHTTPServerSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BAF0E072B9A6E0AB74159DB /* libPods-CocoaHTTPServerSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaHTTPServerSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2FD807164112E4EE1CC898 /* Pods-CocoaHTTPServerSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHTTPServerSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHTTPServerSample/Pods-CocoaHTTPServerSample.debug.xcconfig"; sourceTree = "<group>"; };
+		A032E85F1C6544340096A864 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
+		A032E8611C6546420096A864 /* libCocoaHTTPServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocoaHTTPServer.a; path = "Pods/../build/Debug-iphoneos/libCocoaHTTPServer.a"; sourceTree = "<group>"; };
+		A032E8631C6548780096A864 /* MyHTTPConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHTTPConnection.h; sourceTree = "<group>"; };
+		A032E8641C6548EA0096A864 /* MyHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHTTPConnection.m; sourceTree = "<group>"; };
 		A0621A951C64E5BB004A7755 /* CocoaHTTPServerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHTTPServerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0621A991C64E5BB004A7755 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0621A9B1C64E5BB004A7755 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +38,7 @@
 		A0621AA71C64E5BB004A7755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0621AAA1C64E5BB004A7755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0621AAC1C64E5BB004A7755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64C682D143FD9230254F97C /* Pods-CocoaHTTPServerSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaHTTPServerSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaHTTPServerSample/Pods-CocoaHTTPServerSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +46,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A032E8621C6546420096A864 /* libCocoaHTTPServer.a in Frameworks */,
+				AAF7532C6D6DEC4472C10C10 /* libPods-CocoaHTTPServerSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075BDFB694EFE67AADFF9649 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A032E8611C6546420096A864 /* libCocoaHTTPServer.a */,
+				1BAF0E072B9A6E0AB74159DB /* libPods-CocoaHTTPServerSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		727BA79DBFB89C50017DE0AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E2FD807164112E4EE1CC898 /* Pods-CocoaHTTPServerSample.debug.xcconfig */,
+				B64C682D143FD9230254F97C /* Pods-CocoaHTTPServerSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0621A8C1C64E5BB004A7755 = {
 			isa = PBXGroup;
 			children = (
 				A0621A971C64E5BB004A7755 /* CocoaHTTPServerSample */,
 				A0621A961C64E5BB004A7755 /* Products */,
+				727BA79DBFB89C50017DE0AD /* Pods */,
+				075BDFB694EFE67AADFF9649 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +93,7 @@
 		A0621A971C64E5BB004A7755 /* CocoaHTTPServerSample */ = {
 			isa = PBXGroup;
 			children = (
+				A032E85F1C6544340096A864 /* web */,
 				A0621A9B1C64E5BB004A7755 /* AppDelegate.h */,
 				A0621A9C1C64E5BB004A7755 /* AppDelegate.m */,
 				A0621A9E1C64E5BB004A7755 /* ViewController.h */,
@@ -70,6 +104,8 @@
 				A0621AAC1C64E5BB004A7755 /* Info.plist */,
 				A0621AA41C64E5BB004A7755 /* CocoaHTTPServerSample.xcdatamodeld */,
 				A0621A981C64E5BB004A7755 /* Supporting Files */,
+				A032E8631C6548780096A864 /* MyHTTPConnection.h */,
+				A032E8641C6548EA0096A864 /* MyHTTPConnection.m */,
 			);
 			path = CocoaHTTPServerSample;
 			sourceTree = "<group>";
@@ -89,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0621AAF1C64E5BB004A7755 /* Build configuration list for PBXNativeTarget "CocoaHTTPServerSample" */;
 			buildPhases = (
+				16FC25ADDE8AA3F833FB2089 /* Check Pods Manifest.lock */,
 				A0621A911C64E5BB004A7755 /* Sources */,
 				A0621A921C64E5BB004A7755 /* Frameworks */,
 				A0621A931C64E5BB004A7755 /* Resources */,
+				3392E5D6276314A33A7EDA40 /* Embed Pods Frameworks */,
+				B21411C469D9235B29A02F63 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0621AAB1C64E5BB004A7755 /* LaunchScreen.storyboard in Resources */,
+				A032E8601C6544340096A864 /* web in Resources */,
 				A0621AA81C64E5BB004A7755 /* Assets.xcassets in Resources */,
 				A0621AA31C64E5BB004A7755 /* Main.storyboard in Resources */,
 			);
@@ -147,12 +187,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16FC25ADDE8AA3F833FB2089 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3392E5D6276314A33A7EDA40 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaHTTPServerSample/Pods-CocoaHTTPServerSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B21411C469D9235B29A02F63 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaHTTPServerSample/Pods-CocoaHTTPServerSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0621A911C64E5BB004A7755 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A0621AA61C64E5BB004A7755 /* CocoaHTTPServerSample.xcdatamodeld in Sources */,
+				A032E8651C6548EA0096A864 /* MyHTTPConnection.m in Sources */,
 				A0621AA01C64E5BB004A7755 /* ViewController.m in Sources */,
 				A0621A9D1C64E5BB004A7755 /* AppDelegate.m in Sources */,
 				A0621A9A1C64E5BB004A7755 /* main.m in Sources */,
@@ -265,10 +354,15 @@
 		};
 		A0621AB01C64E5BB004A7755 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E2FD807164112E4EE1CC898 /* Pods-CocoaHTTPServerSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CocoaHTTPServerSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = POSCO.CocoaHTTPServerSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -276,10 +370,15 @@
 		};
 		A0621AB11C64E5BB004A7755 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B64C682D143FD9230254F97C /* Pods-CocoaHTTPServerSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CocoaHTTPServerSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = POSCO.CocoaHTTPServerSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -304,6 +403,7 @@
 				A0621AB11C64E5BB004A7755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

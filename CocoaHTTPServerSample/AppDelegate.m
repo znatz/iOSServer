@@ -7,16 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import <CocoaHTTPServer/HttpServer.h>
+#import "MyHTTPConnection.h"
 
 @interface AppDelegate ()
-
+    @property (strong, nonatomic) HTTPServer *httpServer;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.httpServer = [HTTPServer new];
+    [self.httpServer setType:@"_http._tcp."];
+
+    self.httpServer.port = 50000;
+    self.httpServer.documentRoot = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"web"];
+    [self.httpServer setConnectionClass:[MyHTTPConnection class]];
+    [self startServer];
+
     return YES;
 }
 
@@ -28,10 +37,12 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [self stopServer];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [self startServer];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -122,6 +133,19 @@
             abort();
         }
     }
+}
+
+#pragma mark - Private mehtods
+
+- (void)startServer {
+    NSError *error;
+    if (![self.httpServer start:&error]) {
+        NSLog(@"Error starting HTTP Server: %@", error);
+    }
+}
+
+- (void)stopServer {
+    [self.httpServer stop];
 }
 
 @end
